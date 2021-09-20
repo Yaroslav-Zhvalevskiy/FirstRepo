@@ -16,3 +16,5 @@ function foo() {
 }
 foo();
 
+console.log("some changes");
+
