@@ -55,7 +55,6 @@ function explicitlyConvert() {
     console.log(String(null)); // 'null'
     console.log(String(undefined)); // 'undefined'
 
-
     //boolean
     console.log(Boolean("Hello!")); // true
     console.log(Boolean(' ')); // true
