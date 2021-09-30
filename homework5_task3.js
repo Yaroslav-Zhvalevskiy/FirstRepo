@@ -35,13 +35,3 @@ function splitIntoDecimals(number, numberOfPieces) {
 
 console.log(splitIntoIntegers(15, 4));
 console.log(splitIntoDecimals(15, 4));
-
-
-
-
-
-
-
-
-
-
