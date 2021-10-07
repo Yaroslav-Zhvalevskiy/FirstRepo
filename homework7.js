@@ -90,17 +90,19 @@ function task4() {
     let counter2 = 0;
     let array1 = Array.from(number1.toString(), Number)
     let array2 = Array.from(number2.toString(), Number)
-    for (let el1 of array1) {
-        for (let el2 of array2) {
-            if (el1 === el2) {
-                if (array1.indexOf(el1) === array2.indexOf(el2)) {
-                    counter1++;
-                    continue;
-                }
-                counter2++;
-            }
+    array1.forEach((el, index) => {
+        let el2Index = array2.findIndex(el2 => el === el2);
+        if (el2Index === -1) {
+            return;
         }
-    }
+        else if (el2Index === index) {
+            counter1++;
+        }
+        else {
+            counter2++;
+        }
+
+    })
     console.log(counter1, counter2);
 };
 task4();
